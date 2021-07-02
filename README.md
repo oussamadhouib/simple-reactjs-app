@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshots
 
-![Alt text](/relative/path/to/screenshots/login-page.png?raw=true "LOGIN PAGE")
-![Alt text](/relative/path/to/screenshots/home-page.png?raw=true "HOME PAGE")
-![Alt text](/relative/path/to/screenshots/view-page.png?raw=true "VIEW PAGE")
+![](screenshots/login-page.png)
+![](screenshots/home-page.png)
+![](screenshots/view-page.png)
 
 ## Available Scripts
 
