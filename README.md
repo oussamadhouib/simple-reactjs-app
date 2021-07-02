@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Screenshots
+
+![Alt text](/relative/path/to/screenshots/login-page.png?raw=true "LOGIN PAGE")
+![Alt text](/relative/path/to/screenshots/home-page.png?raw=true "HOME PAGE")
+![Alt text](/relative/path/to/screenshots/view-page.png?raw=true "VIEW PAGE")
+
 ## Available Scripts
 
 In the project directory, you can run:

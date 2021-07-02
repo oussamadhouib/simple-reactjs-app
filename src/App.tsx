@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ThemeProvider } from "styled-components";
+import { lightThemeColors } from "./theme";
+import Login from "./modules/Login/Login";
+import Home from "./modules/Home/Home";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import PublicRoute from "./commons/PublicRoute/PublicRoute";
+import ViewUser from "./components/ViewUser/ViewUser";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={lightThemeColors}>
+      <Router>
+        <Switch>
+          <PublicRoute path={"/login"} component={Login} />
+          <PublicRoute exact path="/user/:id" component={ViewUser} />
+          <PublicRoute path={"/"} component={Home} />
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 
